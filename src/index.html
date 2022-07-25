@@ -2,7 +2,7 @@
 <html lang="ru">
 
 @@include('html/head.html',{
-  "title": 'Агент Брагина Елена'
+"title": 'Агент Брагина Елена'
 })
 
 <body>
@@ -21,13 +21,18 @@
               <a href="#" class="nav__link">Студенты</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link nav__link--active">Новости</a>
+              <a href="news-item.html" class="nav__link nav__link--active">Новости</a>
             </li>
           </ul>
           <div class="nav__item nav__item--contacts">
-            <a href="#" class="nav__link ">
-              Контакты
+            <a href="#" class="nav__item-telegramm">
+              <img src="@img/telegramm.png" alt="Телеграмм">
             </a>
+            <div class="nav__item-box">
+              <a href="tel:+79099732828" class="nav__item-phone">+7 909 973 28 28</a>
+              <a href="mailto:brelenka@gmail.com" class="nav__item-mail">brelenka@gmail.com</a>
+            </div>
+
           </div>
           <div class="burger-menu">
             <p class="burger-menu__text">Меню</p>
@@ -62,7 +67,7 @@
                   Надеюсь, что представленная здесь информация
                   окажется нужной и полезной для заинтересованных лиц.
                 </p>
-                <div class="header__arrow">
+                <div class="header__arrow" href="news">
                   <img src="@img/arrow.png" alt="Вниз">
                 </div>
               </div>
@@ -138,14 +143,15 @@
                 </div>
               </div>
             </div>
-          <div class="swiper-pagination"></div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
+    </div>
   </header>
 
   <main class="main">
-    <section class="news">
+    <section class="news" id="news">
       <div class="container">
         <h2 class="news__title">
           Новости
@@ -194,14 +200,7 @@
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__inner">
-        <p class="footer__title">Актерский агент Елена Брагина </p>
-        <span class="footer__span">© Brelenka.agency 2022</span>
-      </div>
-    </div>
-  </footer>
+  @@include('html/footer.html')
 
   <script src="js/app.min.js"></script>
 </body>

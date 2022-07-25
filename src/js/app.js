@@ -5,7 +5,7 @@ Swiper.use([Navigation, Pagination]);
 
 
 new Swiper('.image-slider', {
-	pagination:{
+	pagination: {
 		el: '.swiper-pagination',
 		type: 'bullets',
 		clickable: true
@@ -21,6 +21,20 @@ arrow.addEventListener('click', () => {
 		top: (height),
 		behavior: 'smooth'
 	});
+})
+
+
+const link = document.querySelector('.header__arrow')
+
+link.addEventListener('click', function () {
+	console.log('hi');
+	const href = this.getAttribute('href');
+	const scrollTarget = document.getElementById(href);
+	const elementPosition = scrollTarget.getBoundingClientRect().top;
+	window.scrollBy({
+		top: elementPosition,
+		behavior: 'smooth'
+	})
 })
 
 // Burger

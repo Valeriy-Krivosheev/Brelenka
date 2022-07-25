@@ -1,0 +1,99 @@
+.breadcrumb {
+	font-size: 14px;
+	font-weight: 400;
+	margin-bottom: 50px;
+
+	& li {
+		display: inline;
+
+		&:not(:last-child) {
+			position: relative;
+			margin-right: 10px;
+
+			&::after {
+				position: absolute;
+				content: '/';
+				right: -10px;
+			}
+		}
+
+		&:last-child {
+			color: #969696;
+		}
+	}
+}
+
+.info {
+	background-image: url(../img/NewsPage-bg.png);
+	background-repeat: no-repeat;
+	padding: 45px 0 120px;
+	background-size: cover;
+	background-position: center center;
+
+	&__content {
+		max-width: 860px;
+		margin: 0 auto;
+		font-size: 18px;
+		margin-bottom: 100px;
+	}
+
+	&__date {
+		font-size: 14px;
+		font-weight: 400;
+		text-transform: uppercase;
+		position: relative;
+		display: inline-block;
+		margin-bottom: 40px;
+		&::after{
+			position: absolute;
+			content: '';
+			width: 70px;
+			height: 1px;
+			background-color: #121933;
+			left: 0;
+			bottom: -10px;
+		}
+	}
+	&__title{
+		font-size: 34px;
+		margin-bottom: 20px;
+	}
+	&__subtitle{
+		font-weight: 400;
+		padding: 10px;
+		color: #ffff;
+		background-color: #455445;
+		display: inline-block;
+		border-radius: 8px;
+		margin-bottom: 30px;
+	}
+	&__image{
+		margin-bottom: 75px;
+	}
+	&__text{
+		font-weight: 400;
+		margin-bottom: 45px;
+	}
+	&__about{
+	margin-bottom: 10px;	
+	&--block{
+		margin-bottom: 20px;
+	}
+	}
+	&__descr{
+		display: inline;
+	}
+	
+	&__data{
+		font-weight: 400;
+	}
+	&__span{
+		font-weight: 400;
+		&-name{
+			font-weight: 18;
+			text-transform: uppercase;
+			text-decoration: underline;
+			color: #fb5300;
+		}
+	}
+}

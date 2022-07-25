@@ -1,0 +1,261 @@
+.header {
+	&__navigation {
+		padding: 40px 0 25px;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	&__items {
+		overflow: hidden;
+	}
+
+	&__inner {
+		background-image: url(../img/background-header.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	&__item {
+		&--left {
+			flex: 0 0 100%;
+			display: flex;
+			padding: 60px 0 50px 0;
+			width: 40%;
+			position: relative;
+		}
+	}
+
+	&__title {
+		font-size: 100px;
+		max-width: 610px;
+		font-family: "Playfair Display", sans-serif;
+		font-weight: 400;
+		color: #455445;
+		line-height: 0.87;
+
+		&--surname {
+			margin-left: 110px;
+			margin-bottom: 40px
+		}
+	}
+
+	&__content {
+		font-weight: 400;
+		padding-left: 110px;
+		font-size: 18px
+	}
+
+	&__span {
+		text-decoration: underline;
+		display: block;
+		font-size: 34px;
+		color: #fb5300;
+		font-family: "Myriad Pro", sans-serif;
+		margin-left: 119px;
+		margin-bottom: 50px;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+	}
+
+	&__text {
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__photo {
+		position: relative;
+		height: 100%;
+	}
+
+	&__photo1 {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		z-index: 10;
+		right: 0;
+		background-image: url(../img/photo1.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+	}
+
+	&__photo2 {
+		position: absolute;
+		height: 50%;
+		width: 29%;
+		z-index: 10;
+		right: 0;
+		background-image: url(../img/photo2.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: right;
+	}
+
+	&__photo3 {
+		position: absolute;
+		height: 50%;
+		width: 35%;
+		z-index: 10;
+		right: 0;
+		bottom: 0;
+		background-image: url(../img/photo3.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: right;
+	}
+
+	&__arrow {
+		bottom: 10%;
+		position: absolute;
+		cursor: pointer;
+		left: 3%;
+	}
+}
+
+.nav {
+	&__list {
+		display: flex;
+		margin-left: 138px;
+	}
+
+	&__item {
+		margin-right: 55px;
+		font-size: 23px;
+		&--contacts {
+			margin-right: 0;
+			display: flex;
+			font-weight: 400;
+		}
+		&-telegramm{
+			margin-right: 20px;
+		}
+		&-phone{
+			display: block;
+			line-height: 23px;
+		}
+		&-mail{
+			text-decoration: underline;
+		}
+	}
+	&__link {
+		color: #455445;
+		transition: all 0.3s;
+
+		&:hover,
+		&:active {
+			color: #739f73;
+		}
+	}
+}
+
+.news {
+	padding: 100px 0 200px;
+	background-image: url(../img/background-news.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	&__title {
+		font-family: "Playfair Display";
+		font-weight: 400;
+		font-size: 85px;
+		margin-bottom: 41px;
+	}
+
+	&__items {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 160px
+	}
+
+	&__item {
+		color: #455445;
+		width: 23%;
+
+		&:not(:last-child) {
+			margin-right: 48px;
+		}
+	}
+
+	&__photo {
+		width: 100%;
+		margin-bottom: 34px;
+	}
+
+	&__img {
+		height: 100%;
+	}
+
+	&__date {
+		font-size: 14px;
+		text-transform: uppercase;
+		font-weight: 400;
+		position: relative;
+		padding-bottom: 14px;
+		letter-spacing: 2.1px;
+		margin-bottom: 21px;
+		display: block;
+
+		&::after {
+			position: absolute;
+			content: "";
+			height: 2px;
+			width: 76px;
+			background-color: #455445;
+			bottom: 0;
+			left: 0;
+		}
+	}
+
+	&__content {
+		max-width: 380px;
+	}
+
+	&__name {
+		font-size: 18px;
+		margin-bottom: 13px;
+		line-height: 1.25;
+	}
+
+	&__text {
+		font-weight: 400;
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+	}
+	&__button{
+		text-align: center;
+	}
+	&__btn{
+		font-weight: 400;
+		text-transform: uppercase;
+		padding: 45px 90px;
+		border: transparent;
+		background-color: #e1fdd4;
+		color: #455445;
+		transition: all 0.3s;
+		&:hover{
+			opacity: 0.8;
+		}
+	}
+}
+.footer{
+	background-color: #455445;
+	&__inner{
+		text-align: center;
+		color: #ffffff;
+		font-weight: 300;
+		padding: 20px 0 25px;
+		letter-spacing: 0.5px;
+	}
+	&__title{
+		margin-bottom: 2px
+	}
+}
+.burger-menu{
+	display: none;
+}

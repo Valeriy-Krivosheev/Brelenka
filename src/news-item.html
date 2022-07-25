@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('html/head.html',{
+"title": 'Новости'
+})
+
+<body>
+  <header class="header">
+    <nav class="nav">
+      <div class="container">
+        <div class="header__navigation">
+          <a href="index.html" class="logo">
+            <img class="logo__img" src="@img/logo.png" alt="Логотип">
+          </a>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Актеры</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Студенты</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link nav__link--active">Новости</a>
+            </li>
+          </ul>
+          <div class="nav__item nav__item--contacts">
+            <a href="#" class="nav__item-telegramm">
+              <img src="@img/telegramm.png" alt="Телеграмм">
+            </a>
+            <div class="nav__item-box">
+              <a href="tel:+79099732828" class="nav__item-phone">+7 909 973 28 28</a>
+              <a href="mailto:brelenka@gmail.com" class="nav__item-mail">brelenka@gmail.com</a>
+            </div>
+
+          </div>
+          <div class="burger-menu">
+            <p class="burger-menu__text">Меню</p>
+            <span></span>
+          </div>
+        </div>
+      </div>
+
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="info">
+      <div class="container">
+        <ul class="breadcrumb">
+          <li>Главная</li>
+          <li>Новости</li>
+          <li>С 24 июня 2021 года в кинотеатрах приключенческий фильм «Бендер: Начало» </li>
+        </ul>
+        <div class="info__content">
+          <span class="info__date">13 мая, 2022</span>
+          <h1 class="info__title">
+            С 24 июня 2021 года в кинотеатрах 
+приключенческий фильм Бендер: Начало»
+          </h1>
+          <h3 class="info__subtitle">Кинопремьеры</h3>
+          <div class="info__inner">
+            <div class="info__image">
+              <img src="@img/NewsPage-slider.png" alt="" class="info__img">
+            </div>
+          </div>
+          <p class="info__text">
+            1919 год. Судьба сталкивает юного идеалиста Осю с турецко-подданным аферистом Ибрагимом Бендером. И никогда бы честный Ося не связался с таким бессовестным и хитроумным мошенником, если бы их не объединила невероятно опасная авантюра – охота за царской реликвией, драгоценным жезлом, заполучить который также не прочь местные бандиты и белые офицеры.
+          </p>
+          <p class="info__text">
+            В череде головокружительных приключений Ося вынужден учиться у Ибрагима обаятельной лести, деликатному обману, пленительному шантажу и… грубой силе. И все это – будучи влюбленным в самую чистую девушку города! И, кажется, еще в одну – роковую иностранную красотку…
+          </p>
+          <p class="info__text">
+            Так начинает складываться портрет легендарного великого комбинатора и любимца женщин Остапа Бендера-Задунайского.
+          </p>
+          <div class="info__about">
+            <h4 class="info__descr">Режисер:</h4>
+            <span class="info__data">Игорь Зайцев</span>
+          </div>
+          <div class="info__about">
+            <h4 class="info__descr">Продюссер:</h4>
+            <span class="info__data">Александр Цекало, Иван Самохвалов, Александра Ремизова</span>
+          </div>
+          <div class="info__about">
+            <h4 class="info__descr">Производство:</h4>
+            <span class="info__data">Продюсерская Компания «Среда»</span>
+          </div>
+          <div class="info__about info__about--block">
+            <h4 class="info__descr">Год:</h4>
+            <span class="info__data">2021</span>
+          </div>
+          <div class="info__about">
+            <span class="info__span"> В роли Марии Фёдоровны  Задунайской (Мамы Оси) — </span>
+            <a class="info__span-name" href="#">Ольга Сутулова
+            </a>
+          </div>
+        </div>
+        <div class="news__button">
+          <a href="#" class="news__btn">
+            все новости
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  @@include('html/footer.html')
+
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>

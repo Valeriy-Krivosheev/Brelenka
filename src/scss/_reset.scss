@@ -1,19 +1,4 @@
-html {
-	box-sizing: border-box;
-	height: 100%;
-}
-body {
-	height: 100%;
-	height: 100%;
-	line-height: 1.56;
-	font-family: "Montserrat", sans-serif;
-	font-style: normal;
-	font-size: 16px;
-	font-weight: 600;
-	color: #455445;
-	background-color: #ffffff;
-	overflow-x: hidden;
-}
+
 *,
 *::after,
 *::before {
@@ -56,18 +41,6 @@ select {
 }
 a {
 	text-decoration: none;
-}
-.container {
-	max-width: 1740px;
-	margin: 0 auto;
-	padding: 0 10px;
-}
-main {
-	flex-grow: 1;
-}
-@font-face {
-	font-family: "Roboto";
-	font-style: normal;
-	font-weight: 400;
-	src: local("Roboto"), url("../fonts/ofont.ru_Myriad\ Pro.ttf") format("ttf");
+	display: inline-block;
+	color: inherit;
 }
