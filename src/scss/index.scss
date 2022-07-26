@@ -1,6 +1,6 @@
 .header {
 	&__navigation {
-		padding: 40px 0 25px;
+		padding: 25px 0 25px;
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-start;
@@ -124,6 +124,9 @@
 	&__item {
 		margin-right: 55px;
 		font-size: 23px;
+		&-box{
+			font-size: 16px;
+		}
 		&--contacts {
 			margin-right: 0;
 			display: flex;

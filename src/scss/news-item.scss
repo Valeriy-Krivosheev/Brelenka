@@ -30,6 +30,10 @@
 	background-size: cover;
 	background-position: center center;
 
+	&__inner {
+		position: relative;
+	}
+
 	&__content {
 		max-width: 860px;
 		margin: 0 auto;
@@ -44,7 +48,8 @@
 		position: relative;
 		display: inline-block;
 		margin-bottom: 40px;
-		&::after{
+
+		&::after {
 			position: absolute;
 			content: '';
 			width: 70px;
@@ -54,42 +59,56 @@
 			bottom: -10px;
 		}
 	}
-	&__title{
+
+	&__title {
 		font-size: 34px;
 		margin-bottom: 20px;
 	}
-	&__subtitle{
+
+	&__subtitle {
 		font-weight: 400;
-		padding: 10px;
+		padding: 5px 8px;
 		color: #ffff;
 		background-color: #455445;
 		display: inline-block;
 		border-radius: 8px;
 		margin-bottom: 30px;
+		font-size: 14px;
 	}
-	&__image{
+
+	&__image {
 		margin-bottom: 75px;
 	}
-	&__text{
+
+	&__img {
+		width: 100%;
+	}
+
+	&__text {
 		font-weight: 400;
-		margin-bottom: 45px;
+		margin-bottom: 35px;
 	}
-	&__about{
-	margin-bottom: 10px;	
-	&--block{
-		margin-bottom: 20px;
+
+	&__about {
+		margin-bottom: 5px;
+
+		&--block {
+			margin-bottom: 20px;
+		}
 	}
-	}
-	&__descr{
+
+	&__descr {
 		display: inline;
 	}
-	
-	&__data{
+
+	&__data {
 		font-weight: 400;
 	}
-	&__span{
+
+	&__span {
 		font-weight: 400;
-		&-name{
+
+		&-name {
 			font-weight: 18;
 			text-transform: uppercase;
 			text-decoration: underline;
