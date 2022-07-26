@@ -1,0 +1,28 @@
+.new{
+	background-image: url(../img/newsBg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 35px 0 140px;
+	&__items{
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 130px 40px;
+		margin-bottom: 150px;
+	}
+	&__title{
+		font-size: 90px;
+		font-weight: 400;
+		font-family: "Playfair Display";
+		margin-bottom: 10px;
+	}
+	&__select{
+		display: inline-block;
+		background-color: #e1fdd4;
+		border: transparent;
+		font-weight: 400;
+		font-size: 16px;
+		padding: 15px;
+		cursor: pointer;
+		margin-bottom: 40px;
+	}
+}

@@ -1,0 +1,85 @@
+.actors {
+	background-image: url(../img/actorsBg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 35px 0 160px;
+	&__title {
+		font-size: 90px;
+		font-weight: 400;
+		font-family: "Playfair Display";
+		margin-right: 30px;
+	}
+
+	&__box {
+		display: flex;
+		align-items: center;
+		margin-bottom: 150px;
+	}
+
+	&__download {
+		padding: 30px 30px 25px 80px;
+		background-color: #e1fdd4;
+		font-weight: 400;
+		text-transform: uppercase;
+		position: relative;
+
+		&::before {
+			position: absolute;
+			content: '';
+			height: 50px;
+			width: 50px;
+			background-image: url(../img/actorsDownload.png);
+			background-repeat: no-repeat;
+			left: 20px;
+			bottom: 15px;
+		}
+	}
+
+	&__items {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		gap: 200px 0;
+		margin-bottom: 150px;
+	}
+	&__item{
+		&:nth-child(odd){
+			margin-right: 23px;
+		}
+		&:nth-child(even){
+			margin-right: 12px;
+		}
+		&:nth-child(6n-4){
+			transform: translateY(70px);
+		}
+		&:nth-child(6n-3){
+			transform: translateY(-35px);
+		}
+		&:nth-child(6n-2){
+			transform: translateY(15px);
+		}
+		&:nth-child(6n-1){
+			transform: translateY(160px);
+		}
+		&:nth-child(6n){
+			transform: translateY(-15px);
+
+		}
+	}
+
+	&__img {
+		width: 100%;
+		margin-bottom: 10px;
+		height: 400px;
+	}
+
+	&__name {
+		margin-left: 12px;
+		font-weight: 20px;
+	}
+
+	&__surname {
+		margin-left: 10px;
+		text-transform: uppercase;
+		font-size: 20px;
+	}
+}
