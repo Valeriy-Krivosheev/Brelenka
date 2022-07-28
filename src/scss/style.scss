@@ -1,4 +1,31 @@
 @import "../../node_modules/swiper/swiper-bundle.css";
+@import "../../node_modules/lightgallery/css/lightgallery-bundle.css";
+
+.lg-comment-box .fb-comments {
+	height: 100%;
+	width: 100%;
+	background: url("../img/loading.gif") no-repeat scroll center center #fff;
+	overflow-y: auto;
+	display: inline-block;
+}
+
+.lg-outer .lg-item:not(.lg-start-end-progress) {
+	background: url("../img/loading.gif") no-repeat scroll center center transparent;
+}
+
+@font-face {
+	font-family: "lg";
+	src: url("/fonts/lg.woff2");
+	src: local("lg"), url("/fonts/lg.ttf") format("ttf");
+	src: local("lg"), url("/fonts/lg.woff") format("woff"),
+		url("/fonts/lg.svg?io9a6k#lg")format("svg");
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+
+
 @import "reset";
 @import "global";
 @import "slider";
@@ -6,4 +33,5 @@
 @import "news-item";
 @import "news";
 @import "actors";
+@import "actor";
 @import "media";

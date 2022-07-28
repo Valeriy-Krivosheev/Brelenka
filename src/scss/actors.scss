@@ -14,10 +14,11 @@
 		display: flex;
 		align-items: center;
 		margin-bottom: 150px;
+		align-items: center;
 	}
 
 	&__download {
-		padding: 30px 30px 25px 80px;
+		padding: 25px 25px 20px 60px;
 		background-color: #e1fdd4;
 		font-weight: 400;
 		text-transform: uppercase;
@@ -25,13 +26,15 @@
 
 		&::before {
 			position: absolute;
-			content: '';
-			height: 50px;
-			width: 50px;
+			content: "";
+			height: 40px;
+			width: 39px;
 			background-image: url(../img/actorsDownload.png);
 			background-repeat: no-repeat;
-			left: 20px;
-			bottom: 15px;
+			left: 18px;
+			bottom: 25px;
+			background-position: center center;
+			background-size: contain;;
 		}
 	}
 
@@ -69,7 +72,6 @@
 	&__img {
 		width: 100%;
 		margin-bottom: 10px;
-		height: 400px;
 	}
 
 	&__name {

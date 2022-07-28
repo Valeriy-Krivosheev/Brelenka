@@ -169,23 +169,20 @@
 	}
 
 	&__items {
-		display: flex;
-		justify-content: center;
-		margin-bottom: 160px
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 60px 30px;
+		margin-bottom: 150px;
 	}
 
 	&__item {
 		color: #455445;
-		width: 23%;
-
-		&:not(:last-child) {
-			margin-right: 48px;
-		}
 	}
 
 	&__photo {
 		width: 100%;
 		margin-bottom: 34px;
+		height: 60%;
 	}
 
 	&__img {

@@ -31,11 +31,15 @@
     "gulp-webp": "^4.0.1",
     "gulp-webp-html-nosvg": "^1.1.1",
     "gulp-webpcss": "^1.1.1",
+    "lightgallery": "^2.5.0",
     "newer": "^0.1.5",
     "sass": "^1.53.0",
     "swiper": "^8.3.1",
     "webp-converter": "^2.2.3",
     "webpack": "^5.73.0",
     "webpack-stream": "^7.0.0"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0"
   }
 }

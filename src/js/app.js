@@ -2,6 +2,35 @@
 import Swiper, { Navigation, Pagination } from 'swiper';
 Swiper.use([Navigation, Pagination]);
 
+import lightGallery from 'lightgallery';
+import lgZoom from '../../node_modules/lightgallery/plugins/zoom/lg-zoom.min.js'
+import lgThumbnail from '../../node_modules/lightgallery/plugins/thumbnail/lg-thumbnail.min.js'
+import lgVideo from '../../node_modules/lightgallery/plugins/video/lg-video.min.js'
+
+// Галерея на странице Актера
+lightGallery(document.getElementById('lightgallery1'), {
+	plugins: [lgZoom, lgThumbnail],
+});
+
+lightGallery(document.getElementById('lightgallery2'), {
+	plugins: [lgZoom, lgThumbnail],
+});
+lightGallery(document.getElementById('lightgallery3'), {
+	plugins: [lgZoom, lgThumbnail],
+});
+
+lightGallery(document.getElementById('gallery-videos-demo'), {
+	plugins: [lgVideo],
+});
+
+lightGallery(document.getElementById('gallery-videos-demo2'), {
+	plugins: [lgVideo],
+});
+
+lightGallery(document.getElementById('gallery-videos-demo3'), {
+	plugins: [lgVideo],
+});
+
 
 //  Slider настройки основной страницы
 const mainSlider = document.querySelector('.image-slider')
@@ -24,9 +53,9 @@ new Swiper(newsSlider, {
 		clickable: true
 	},
 	navigation: {
-    nextEl: '.news-button-next',
-    prevEl: '.news-button-prev',
-  },
+		nextEl: '.news-button-next',
+		prevEl: '.news-button-prev',
+	},
 });
 
 
@@ -36,7 +65,8 @@ const link = document.querySelector('.header__arrow')
 link?.addEventListener('click', function () {
 	const href = this.getAttribute('href');
 	const scrollTarget = document.getElementById(href);
-	const elementPosition = scrollTarget.getBoundingClientRect().top;
+	let elementPosition = scrollTarget.getBoundingClientRect().top;
+	elementPosition = elementPosition + 100
 	window.scrollBy({
 		top: elementPosition,
 		behavior: 'smooth'
@@ -53,3 +83,24 @@ burger.addEventListener('click', () => {
 	burgerText.classList.toggle('active');
 	navMenu.classList.toggle('active');
 })
+
+
+// Аккордеон
+const accordions = document.querySelectorAll('.actor__accordion');
+
+accordions.forEach(function (item) {
+	item.addEventListener('click', function () {
+		if (this.classList.contains('active')) {
+			this.classList.remove('active');
+		}
+		else {
+			item.classList.remove('active');
+			this.classList.add('active');
+		}
+	})
+})
+
+
+
+
+
