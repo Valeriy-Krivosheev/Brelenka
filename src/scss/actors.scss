@@ -45,6 +45,7 @@
 		margin-bottom: 150px;
 	}
 	&__item{
+		overflow: hidden;
 		&:nth-child(odd){
 			margin-right: 23px;
 		}

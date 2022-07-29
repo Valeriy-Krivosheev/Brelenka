@@ -29,6 +29,12 @@
 		border-bottom: 1px solid #455445;
 	}
 
+	&__download {
+		&::before {
+			background-image: url(../img/actorDownload.png);
+		}
+	}
+
 	&__hidden {
 		max-height: 0;
 		overflow: hidden;
@@ -86,7 +92,7 @@
 	}
 
 	&__common {
-		display: flex;
+		display: block;
 		font-weight: 400;
 		padding: 0 20px;
 
@@ -99,20 +105,33 @@
 		}
 
 		&--name {
-			width: 40%;
+			display: flex;
+			justify-content: space-between;
+			& span{
+				width: 50%;
+			}
 		}
 
 		&--info {
-			width: 50%;
+			display: flex;
+			justify-content: space-between;
+			& span{
+				width: 50%;
+			}
 		}
 
 		&--name span {
+			&:first-child{
+				color: #878a87;
+			}
 			display: block;
-			color: #878a87;
 			margin-bottom: 10px;
 		}
 
 		&--info span {
+			&:first-child{
+				color: #878a87;
+			}
 			display: block;
 			margin-bottom: 10px;
 		}
@@ -161,6 +180,10 @@
 	}
 
 	&__photo {
+		&--media {
+			display: none;
+		}
+
 		margin-bottom: 35px;
 
 		&--title {
@@ -171,6 +194,10 @@
 	}
 
 	&__video {
+		&--media {
+			display: none;
+		}
+
 		&--title {
 			text-transform: uppercase;
 			font-size: 15px;

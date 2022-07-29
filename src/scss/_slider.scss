@@ -71,3 +71,12 @@
 .swiper-pagination-bullet-active {
   background-color: #040404 !important;
 }
+@media(max-width:990px){
+  .swiper-pagination{
+    display: none;
+  }
+  .news-button-next,
+  .news-button-prev{
+    display: none;
+  }
+}
